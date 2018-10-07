@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mapbox.com/geocoding/v5/mapbox.places/coffee.json?access_token=pk.eyJ1Ijoiem9mcm9hIiwiYSI6ImNqbXJzY2lxYjI0YTIzdnBkeWZyMHZjcGoifQ.W_k_sd4gJabG1Gj8YWIJzQ&limit=10&proximity=--9.14,38.75
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: Unknown
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 07 Oct 2018 21:09:44 GMT
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-rate-limit-interval,x-rate-limit-limit,x-rate-limit-remaining,x-rate-limit-reset
+      Cache-Control:
+      - max-age=604800
+      X-Rate-Limit-Limit:
+      - '600'
+      X-Rate-Limit-Interval:
+      - '60'
+      X-Rate-Limit-Reset:
+      - '1538946644'
+      Last-Modified:
+      - Fri, 05 Oct 2018 15:06:51 GMT
+      Etag:
+      - W/"47-a58a1cfe"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 cdefd7498c238ce7b5d291eb3d7f28f9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - JaNpT2yQFQ-h-po12sFI8ejRn2F-9SAyf5LMfpRVDa4jQDzepKhWGw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Proximity lon value must be a number between -180 and 180"}'
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 21:09:44 GMT
+recorded_with: VCR 4.0.0
