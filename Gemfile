@@ -15,6 +15,9 @@ gem 'puma', '~> 3.0'
 # HTTP requests
 gem 'faraday'
 
+# Error logging
+gem 'sentry-raven'
+
 group :development, :test do
   # Write 'binding.pry' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug'

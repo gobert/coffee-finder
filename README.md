@@ -17,3 +17,8 @@ MAPBOX_TOKEN=your_mapbox_token_here bundle exec rspec -- spec
 MAPBOX_TOKEN=your_mapbox_token_here  bundle exe rails s
 ```
 Check it works on [localhost:3000/find/coffee_shops](http://localhost:3000/v1/find/coffee_shops?longitude=43&latitude=13)
+
+## Deploy (to production)
+```
+git push heroku master
+```

@@ -30,3 +30,7 @@ module CoffeeFinder
     config.autoload_paths += %W(#{config.root}/lib)
   end
 end
+
+Raven.configure do |config|
+  config.dsn = ENV['RAVEN_URL']
+end
